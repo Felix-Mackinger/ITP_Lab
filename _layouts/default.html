@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} – {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <!-- Fach links oben mit Zurück-Button -->
+    <div class="header-top-left">
+      <span class="header-back">
+         <a href="{{ '/' | relative_url }}" title="Zurück zur Startseite">⬅️ Zurück</a>
+      </span>
+      {% if page.subject %}
+      <strong>Fach:</strong> {{ page.subject }}
+      {% endif %}
+    </div>
+
+    <!-- Datum rechts oben -->
+    {% if page.date %}
+    <div class="header-top-right">
+      <strong>Datum:</strong> {{ page.date }}
+    </div>
+    {% endif %}
+
+    <!-- Titel -->
+    <h1>{{ page.title }}</h1>
+
+    <!-- Name & Klasse unter Titel -->
+    {% if page.author or page.klasse or page.partner %}
+    <p class="meta">
+      {% if page.author %}<strong>Author:</strong> {{ page.author }}{% endif %}
+      {% if page.klasse %}{% if page.author %} | {% endif %}<strong>Klasse:</strong> {{ page.klasse }}{% endif %}
+      {% if page.partner %}{% if page.author or page.klasse %} | {% endif %}<strong>Partner:</strong> {{ page.partner }}{% endif %}
+    </p>
+    {% endif %}
+
+    <!-- Theme Toggle rechts unten -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌙/☀️</button>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    © {{ site.time | date: "%Y" }} – {{ site.title }}
+  </footer>
+
+  <script>
+    /* Theme Toggle speichern */
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('theme',
+        document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+
+    /* Copy-Button für Rouge-Codeblöcke */
+    document.addEventListener("DOMContentLoaded", () => {
+      const codeWrappers = document.querySelectorAll("div.highlight");
+      codeWrappers.forEach(wrapper => {
+        // Doppelte Buttons vermeiden
+        wrapper.querySelectorAll(".copy-btn").forEach(b => b.remove());
+
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.textContent = "Copy";
+
+        button.addEventListener("click", async () => {
+          const text = wrapper.innerText;
+          await navigator.clipboard.writeText(text);
+          button.textContent = "Copied!";
+          setTimeout(() => (button.textContent = "Copy"), 1500);
+        });
+
+        wrapper.appendChild(button);
+      });
+    });
+  </script>
+</body>
+</html>
