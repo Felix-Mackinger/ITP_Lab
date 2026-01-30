@@ -2,7 +2,7 @@
 title: "Raspberry PI Basis"
 subtitle: "Installation und RemoteDev"
 author:
-  - Felix Mackinger
+  - Felix Mackinger |
   - Markus Truschnegg
 klasse: "4AHITS"
 subject: "ITP2-I Labor"
