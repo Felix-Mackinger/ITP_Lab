@@ -38,13 +38,15 @@ Muss jetzt noch nicht aktiviert werden kann später noch aktiviert werden.
 
 ![RaspberryPI SetUp](img/Installation/SetUp09.png)
 
-Credentials
---- ---------------------- ---     
- | Hostname: RasPi          |     
- | Username: ras_pi         |     
- | Password: RasPi67        |     
- | ssh-pass: Keygen         |    
---- ----------------------- ---     
+Credentials 
+  
+| Feld       | Wert     |
+|------------|----------|
+| Hostname   | RasPi    |
+| Username   | ras_pi   |
+| Password   | RasPi67  |
+| SSH-Auth   | Keygen   |
+    
 
 
 ## Setup über nmap 
