@@ -39,12 +39,12 @@ Muss jetzt noch nicht aktiviert werden kann später noch aktiviert werden.
 ![RaspberryPI SetUp](img/Installation/SetUp09.png)
 
 Credentials
------------------------------     
-| Hostname: RasPi           |     
-| Username: ras_pi          |     
-| Password: RasPi67         |     
-| ssh-pass:                 |    
------------------------------     
+--- ---------------------- ---     
+ | Hostname: RasPi          |     
+ | Username: ras_pi         |     
+ | Password: RasPi67        |     
+ | ssh-pass: Keygen         |    
+--- ----------------------- ---     
 
 
 ## Setup über nmap 
@@ -178,7 +178,7 @@ and check to make sure that only the key(s) you wanted were added.
 
 ## Setup VS Code
 
-Installieren der Extension Remote SSH und Remote Dev
+Installieren der Extension Remote SSH und Remote Dev.
 
 Am VS Code Interface befindet sich links unten ein Remote Dev symbol. 
 Danach popt ein wahlmenü auf wo man eine Verbindung mittels verschiedener Methoden starten kann.
