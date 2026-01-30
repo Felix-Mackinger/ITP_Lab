@@ -16,8 +16,27 @@ toc: true
 
 ## Guideline
 
-!!Bilder
+![RaspberryPI SetUp](img/installation/SetUp01.png)
 
+![RaspberryPI SetUp](img/installation/SetUp02.png)
+Bevor dieses Feld erscheint auf "other OS" klicken.
+
+![RaspberryPI SetUp](img/installation/SetUp03.png)
+
+![RaspberryPI SetUp](img/installation/SetUp04.png)
+
+![RaspberryPI SetUp](img/installation/SetUp05.png)
+
+WLAN kann übersprungen werden
+
+![RaspberryPI SetUp](img/installation/SetUp06.png)
+
+![RaspberryPI SetUp](img/installation/SetUp07.png)
+Muss jetzt noch nicht aktiviert werden kann später noch aktiviert werden.
+
+![RaspberryPI SetUp](img/installation/SetUp08.png)
+
+![RaspberryPI SetUp](img/installation/SetUp09.png)
 
 Credentials
 -----------------------------
