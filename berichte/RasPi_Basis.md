@@ -188,6 +188,7 @@ Danach eine neue Host Verbindung einrichten und dann `ras_pi@RasPi.local` eingeb
 
 Jetzt kann man sich einfach über VS Code in den Raspberry verbinden.
 
+![VS Code Remote Dev](img/RemoteDev/remoteDev_01.png)
 
 ## Nodejs
 
