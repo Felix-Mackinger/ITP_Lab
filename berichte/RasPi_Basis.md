@@ -16,27 +16,27 @@ toc: true
 
 ## Guideline
 
-![RaspberryPI SetUp](img/installation/SetUp01.png)
+![RaspberryPI SetUp](img/Installation/SetUp01.png)
 
-![RaspberryPI SetUp](img/installation/SetUp02.png)
+![RaspberryPI SetUp](img/Installation/SetUp02.png)
 Bevor dieses Feld erscheint auf "other OS" klicken.
 
-![RaspberryPI SetUp](img/installation/SetUp03.png)
+![RaspberryPI SetUp](img/Installation/SetUp03.png)
 
-![RaspberryPI SetUp](img/installation/SetUp04.png)
+![RaspberryPI SetUp](img/Installation/SetUp04.png)
 
-![RaspberryPI SetUp](img/installation/SetUp05.png)
+![RaspberryPI SetUp](img/Installation/SetUp05.png)
 
 WLAN kann übersprungen werden
 
-![RaspberryPI SetUp](img/installation/SetUp06.png)
+![RaspberryPI SetUp](img/Installation/SetUp06.png)
 
-![RaspberryPI SetUp](img/installation/SetUp07.png)
+![RaspberryPI SetUp](img/Installation/SetUp07.png)
 Muss jetzt noch nicht aktiviert werden kann später noch aktiviert werden.
 
-![RaspberryPI SetUp](img/installation/SetUp08.png)
+![RaspberryPI SetUp](img/Installation/SetUp08.png)
 
-![RaspberryPI SetUp](img/installation/SetUp09.png)
+![RaspberryPI SetUp](img/Installation/SetUp09.png)
 
 Credentials
 -----------------------------
@@ -139,11 +139,11 @@ permitted by applicable law.
 
 └$ ssh-keygen -t ed25519
 Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/ras_pi/.ssh/id_ed25519): 
-Enter passphrase for "/home/ras_pi/.ssh/id_ed25519" (empty for no passphrase): 
+Enter file in which to save the key (/home/ras_pi/.ssh/Id_ed25519): 
+Enter passphrase for "/home/ras_pi/.ssh/Id_ed25519" (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in /home/ras_pi/.ssh/id_ed25519
-Your public key has been saved in /home/ras_pi/.ssh/id_ed25519.pub
+Your identification has been saved in /home/ras_pi/.ssh/Id_ed25519
+Your public key has been saved in /home/ras_pi/.ssh/Id_ed25519.pub
 The key fingerprint is:
 SHA256:IWe+LN70QZwcDDLYxsnwGrMINWmNpMBpDbbeXptpU3o ras_pi@RasPi
 The key's randomart image is:
@@ -162,7 +162,7 @@ The key's randomart image is:
 
 └─$ ssh-copy-id ras_pi@RasPi.local
 
-/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/kali/.ssh/id_ed25519.pub"
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/kali/.ssh/Id_ed25519.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
 ras_pi@raspi.local's password: 
